@@ -211,5 +211,18 @@ h2 {
     .cta-text {
         padding-top: 15%;
     }
+.navbar-brand {
+    font-size: 25px;
 
+}
+.logo {
+    width: 90px;
+    height: 90px;
+}
+
+}
+.navbar-toggler-icon {
+    display: block;
+    width: 50px;
+    border-radius: 1px;
 }
