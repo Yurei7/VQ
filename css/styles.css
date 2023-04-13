@@ -1,23 +1,32 @@
+body {
+    text-align: center;
+
+}
+
+/*-------------------------------- navigation bar section -------------------------------- */
+
+.navbar {
+    padding: 0 0 1.5rem 0;
+}
+
+.nav-item {
+    padding: 0 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    padding: 0 18px;
+}
+
+
+
+/*-------------------------------- Title section -------------------------------- */
+
 #title {
     background-color: #99ffc7;
+    text-align: left;
 }
 
 .topsection {
     padding: 2% 10% 10% 10%;
-}
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 5rem;
-    line-height: 1.5;
-    padding-bottom: 1rem;
-}
-
-
-.navbar {
-    font-size: 1.2rem;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 0 0 1.5rem 0;
 }
 
 .wireframe {
@@ -28,32 +37,45 @@ h1 {
     height: auto;
     position: absolute;
     bottom: -15%;
-
-
-}
-
-.nav-item {
-    padding: 0 18px;
 }
 
 .downloadbtn {
     margin: 0 3% 5% 0;
 }
 
-.featurestext {
-    text-align: center;
+/*-------------------------------- Headings -------------------------------- */
+
+.big-heading {
+    font-size: 5rem;
+    line-height: 1.5;
+    padding-bottom: 1rem;
 }
+
+.medium-heading {
+    font-size: 2.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+}
+
+/*-------------------------------- Features section -------------------------------- */
+
 
 .featuressection {
     background-color: white;
     padding: 8% 10%;
     position: relative;
-
 }
 
 .featuresicon {
     padding-bottom: 10%;
-
 }
 
 .fist {
@@ -80,55 +102,46 @@ h1 {
     color: orange;
 }
 
-body {
-    font-family: 'Ubuntu', sans-serif;
 
-}
+/*-------------------------------- Testimonials section -------------------------------- */
 
-h3 {
-    font-family: 'Montserrat', sans-serif;
-
-}
 
 #testimonials {
-    text-align: center;
     background-color: #d4fae5;
-
 }
 
 .testimonial-text {
-    padding: 7% 15% 3% 15%;
+    padding: 7% 20% 3% 20%;
 }
 
-h2 {
-    font-size: 2.5rem;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.2;
-    padding: 10% 15% 5% 15%;
-}
 
 .test-image {
     width: 11%;
     border-radius: 100%;
     margin: 20px;
-
 }
+
+/*-------------------------------- Press section -------------------------------- */
 
 #press {
     background-color: #d4fae5;
-    text-align: center;
     padding: 2% 0 5% 0;
 }
 
 .presslogo {
     width: 15%;
     margin: 20px 20px 50px;
-
 }
 
+/*-------------------------------- Pricing section -------------------------------- */
+
 .pricingsection {
-    text-align: center;
     padding: 0 10% 5% 10%;
+}
+
+.pricing-text {
+    padding: 10% 15% 5% 15%;
+
 }
 
 .card-body:hover {
@@ -144,50 +157,52 @@ h2 {
     padding: 2% 15% 2% 15%;
 }
 
-
 .pricecol {
     padding: 3% 1%;
 }
 
+/*-------------------------------- Call to action section -------------------------------- */
+
 #cta {
-    text-align: center;
-}
-
-#footer {
-    text-align: center;
-    padding: 5% 0 2% 0;
-}
-
-.cta {
-    height: 550px;
     background-color: #99ffc7;
+    padding-bottom: 3%;
 }
-
 .cta-text {
     padding: 10% 15% 5% 15%;
-    font-size: 60px;
-    font-family: 'Montserrat', sans-serif;
 
 }
 
 .cta-btn {
-    margin: 0 1% 0 1%;
+    margin: 0 1% 5% 1%;
     padding: 1% 3%;
+}
+
+/*-------------------------------- Footer section -------------------------------- */
+
+#footer {
+    padding: 5% 0 2% 0;
+}
+
+.social-icon {
+    margin: 5px;
 }
 
 .copyright {
     padding-top: 10px;
 }
 
+/*-------------------------------- Mobile responsiveness section -------------------------------- */
 
 @media (max-width:1035px) {
+
+    /*---------- Title section ------- */
+
     .wireframe {
         transform: rotate(0deg);
         position: static;
         max-width: 800px;
         max-height: 800px;
         height: auto;
-
         width: auto;
     }
 
@@ -195,14 +210,13 @@ h2 {
         text-align: center;
     }
 
-    h2 {
-
-        font-size: 40px;
-    }
+    /*---------- Pricing section ------- */
 
     .pricecol {
         padding-top: 5%;
     }
+
+    /*---------- Call to action section ------- */
 
     .cta-btn {
         margin-top: 3%;
@@ -210,19 +224,23 @@ h2 {
 
     .cta-text {
         padding-top: 15%;
+        font-size: 60px;
     }
-.navbar-brand {
-    font-size: 25px;
 
-}
-.logo {
-    width: 90px;
-    height: 90px;
-}
+    /*---------- Navigation bar section ------- */
 
-}
-.navbar-toggler-icon {
-    display: block;
-    width: 50px;
-    border-radius: 1px;
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .navbar-toggler-icon {
+        display: block;
+        width: 50px;
+        border-radius: 1px;
+    }
 }
